@@ -263,6 +263,64 @@ function DownloadSection() {
   );
 }
 
+const FAQS = [
+  {
+    q: 'Πόσα ραδιόφωνα έχει το Greek Radio+;',
+    a: '114 ελληνικούς ραδιοφωνικούς σταθμούς από όλη την Ελλάδα — από την Αθήνα μέχρι την Κρήτη.',
+  },
+  {
+    q: 'Είναι δωρεάν;',
+    a: 'Ναι, εντελώς δωρεάν. Δεν χρειάζεται εγγραφή, δεν υπάρχει συνδρομή.',
+  },
+  {
+    q: 'Σε ποιες πλατφόρμες είναι διαθέσιμο;',
+    a: 'iOS (iPhone & iPad) και Android.',
+  },
+  {
+    q: 'Μπορώ να ακούω με κλειδωμένη οθόνη;',
+    a: 'Ναι. Υποστηρίζει πλήρη αναπαραγωγή στο background και έλεγχο από το Control Center / Lock Screen.',
+  },
+  {
+    q: 'Τι είναι ο sleep timer;',
+    a: 'Χρονοδιακόπτης που σταματά αυτόματα τη μουσική μετά από 15, 30 ή 60 λεπτά.',
+  },
+  {
+    q: 'Χρειάζεται σύνδεση στο internet;',
+    a: 'Ναι, απαιτείται σύνδεση για live streaming. Η εφαρμογή σε ειδοποιεί αυτόματα όταν χάσεις σύνδεση.',
+  },
+];
+
+function FaqSection() {
+  return (
+    <section className="py-24 border-t border-white/5">
+      <div className="max-w-3xl mx-auto px-6">
+        <div className="text-center mb-14">
+          <h2 className="text-3xl font-black mb-3">Συχνές Ερωτήσεις</h2>
+          <p className="text-text-secondary">Ό,τι θέλεις να ξέρεις για το Greek Radio+</p>
+        </div>
+        <div className="space-y-3">
+          {FAQS.map((faq) => (
+            <details
+              key={faq.q}
+              className="group bg-bg-card border border-white/5 hover:border-white/10 rounded-2xl overflow-hidden transition-colors"
+            >
+              <summary className="flex items-center justify-between px-6 py-5 cursor-pointer list-none font-semibold text-sm md:text-base select-none">
+                {faq.q}
+                <span className="ml-4 flex-shrink-0 w-5 h-5 rounded-full border border-white/20 flex items-center justify-center text-xs group-open:rotate-45 transition-transform duration-200">
+                  +
+                </span>
+              </summary>
+              <div className="px-6 pb-5 text-text-secondary text-sm leading-relaxed">
+                {faq.a}
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Footer() {
   return (
     <footer className="border-t border-white/5 py-12">
@@ -292,6 +350,7 @@ export default function Home() {
       <StatsSection />
       <FeaturesSection />
       <DownloadSection />
+      <FaqSection />
       <Footer />
     </main>
   );
