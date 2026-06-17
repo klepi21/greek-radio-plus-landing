@@ -104,7 +104,6 @@ function HeroSection() {
           </p>
 
           <div id="download" className="flex flex-col sm:flex-row gap-4">
-            {/* App Store */}
             <a
               href="#"
               className="flex items-center gap-3 bg-white text-black font-semibold px-6 py-3 rounded-2xl hover:bg-gray-100 transition-colors group"
@@ -117,27 +116,10 @@ function HeroSection() {
                 <div className="text-base leading-none">App Store</div>
               </div>
             </a>
-
-            {/* Google Play */}
-            <a
-              href="#"
-              className="flex items-center gap-3 bg-white text-black font-semibold px-6 py-3 rounded-2xl hover:bg-gray-100 transition-colors"
-            >
-              <svg viewBox="0 0 24 24" className="w-6 h-6">
-                <path fill="#4CAF50" d="M1.22 0C.832 0 .5.387.5.861v22.278c0 .474.332.861.72.861l.04-.02L12.5 12.5.76.12 1.22 0z"/>
-                <path fill="#FF3D00" d="M23.28 10.6L20.1 8.79 16.7 12l3.4 3.21 3.21-1.81c.9-.5.9-2.11-.03-2.8z"/>
-                <path fill="#FFD600" d="M.76 23.88L13.29 11.9l-3.17-3.17L.76 23.88z"/>
-                <path fill="#3DDAEB" d="M13.29 12.1L.76.12.04.82l-.01.01L13.29 12.1z"/>
-              </svg>
-              <div>
-                <div className="text-xs leading-none mb-0.5 opacity-70">Διαθέσιμο στο</div>
-                <div className="text-base leading-none">Google Play</div>
-              </div>
-            </a>
           </div>
 
           <p className="text-text-muted text-sm mt-5">
-            Δωρεάν • iOS & Android • Χωρίς εγγραφή
+            Δωρεάν • iOS • Χωρίς εγγραφή
           </p>
         </div>
 
@@ -233,9 +215,9 @@ function DownloadSection() {
           Κατέβασε το <span className="gradient-text">τώρα</span>
         </h2>
         <p className="text-text-secondary text-lg mb-10">
-          Διαθέσιμο δωρεάν για iOS και Android. Χωρίς εγγραφή, χωρίς συνδρομή.
+          Διαθέσιμο δωρεάν για iPhone. Χωρίς εγγραφή, χωρίς συνδρομή.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex justify-center">
           <a
             href="#"
             className="flex items-center justify-center gap-3 bg-white text-black font-semibold px-8 py-4 rounded-2xl hover:bg-gray-100 transition-colors text-lg"
@@ -244,18 +226,6 @@ function DownloadSection() {
               <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
             </svg>
             App Store
-          </a>
-          <a
-            href="#"
-            className="flex items-center justify-center gap-3 bg-bg-elevated border border-white/10 text-white font-semibold px-8 py-4 rounded-2xl hover:border-white/20 transition-colors text-lg"
-          >
-            <svg viewBox="0 0 24 24" className="w-7 h-7 flex-shrink-0">
-              <path fill="#4CAF50" d="M1.22 0C.832 0 .5.387.5.861v22.278c0 .474.332.861.72.861l.04-.02L12.5 12.5.76.12 1.22 0z"/>
-              <path fill="#FF3D00" d="M23.28 10.6L20.1 8.79 16.7 12l3.4 3.21 3.21-1.81c.9-.5.9-2.11-.03-2.8z"/>
-              <path fill="#FFD600" d="M.76 23.88L13.29 11.9l-3.17-3.17L.76 23.88z"/>
-              <path fill="#3DDAEB" d="M13.29 12.1L.76.12.04.82l-.01.01L13.29 12.1z"/>
-            </svg>
-            Google Play
           </a>
         </div>
       </div>
@@ -274,7 +244,7 @@ const FAQS = [
   },
   {
     q: 'Σε ποιες πλατφόρμες είναι διαθέσιμο;',
-    a: 'iOS (iPhone & iPad) και Android.',
+    a: 'iOS (iPhone). Έκδοση Android σύντομα.',
   },
   {
     q: 'Μπορώ να ακούω με κλειδωμένη οθόνη;',
