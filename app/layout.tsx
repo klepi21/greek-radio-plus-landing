@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     template: '%s | Greek Radio+',
   },
   description:
-    'Άκου 114 ελληνικά ραδιόφωνα live, δωρεάν. Ανακάλυψε σταθμούς ανά περιοχή και κατηγορία, αποθήκευσε αγαπημένα, sleep timer, lock screen controls. Διαθέσιμο για iOS και Android.',
+    'Άκου 114 ελληνικά ραδιόφωνα live, δωρεάν. Ανακάλυψε σταθμούς ανά περιοχή και κατηγορία, αποθήκευσε αγαπημένα, sleep timer, lock screen controls. Διαθέσιμο για iPhone.',
   keywords: [
     // Core
     'greek radio',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     // App-specific — no competitor targets these
     'εφαρμογή ραδιοφώνου',
     'greek radio app ios',
-    'greek radio app android',
+    'greek radio app iphone',
     'ραδιόφωνο δωρεάν',
     'listen greek radio free',
     'greek radio plus',
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   category: 'music',
   openGraph: {
     title: 'Greek Radio+ | 114 Ελληνικά Ραδιόφωνα Live',
-    description: 'Άκου 114 ελληνικά ραδιόφωνα live, δωρεάν. iOS & Android.',
+    description: 'Άκου 114 ελληνικά ραδιόφωνα live, δωρεάν. Διαθέσιμο για iPhone.',
     type: 'website',
     url: BASE_URL,
     siteName: 'Greek Radio+',
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Greek Radio+ | 114 Ελληνικά Ραδιόφωνα Live',
-    description: 'Άκου 114 ελληνικά ραδιόφωνα live, δωρεάν. iOS & Android.',
+    description: 'Άκου 114 ελληνικά ραδιόφωνα live, δωρεάν. Διαθέσιμο για iPhone.',
     images: ['/splash.png'],
   },
   icons: {
@@ -103,7 +103,7 @@ const jsonLd = {
       url: BASE_URL,
       image: `${BASE_URL}/icon.png`,
       applicationCategory: 'MusicApplication',
-      operatingSystem: 'iOS, Android',
+      operatingSystem: 'iOS',
       inLanguage: 'el',
       offers: {
         '@type': 'Offer',
@@ -153,11 +153,11 @@ const jsonLd = {
       name: 'Greek Radio+',
       applicationCategory: 'MusicApplication',
       applicationSubCategory: 'Radio Streaming',
-      operatingSystem: 'iOS 15+, Android 8+',
+      operatingSystem: 'iOS 15+',
       url: BASE_URL,
       image: `${BASE_URL}/icon.png`,
       description:
-        'Εφαρμογή για live streaming 114 ελληνικών ραδιοφωνικών σταθμών. Δωρεάν για iOS και Android.',
+        'Εφαρμογή για live streaming 114 ελληνικών ραδιοφωνικών σταθμών. Δωρεάν για iPhone.',
       inLanguage: 'el',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
       keywords:
@@ -202,7 +202,7 @@ const jsonLd = {
           name: 'Σε ποιες πλατφόρμες είναι διαθέσιμο το Greek Radio+;',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Το Greek Radio+ είναι διαθέσιμο για iOS (iPhone, iPad) και Android.',
+            text: 'Το Greek Radio+ είναι διαθέσιμο για iPhone (iOS). Έκδοση Android σύντομα.',
           },
         },
         {
